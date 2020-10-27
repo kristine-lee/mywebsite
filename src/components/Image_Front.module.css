@@ -1,6 +1,13 @@
 .frontImage {
-  /* display: flex;
-  align-items: flex-end;
-  flex-wrap: wrap; */
-
+  display: block;
+  flex-grow: 1;
+  width: 350px;
+  margin: 20px;
 }
+
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
