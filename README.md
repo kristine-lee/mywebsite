@@ -1,6 +1,6 @@
 kristinelee.tech
 
-##Portfolio website. Built with:
+Portfolio website. Built with:
 
 - Typescript
 - Gatsby
