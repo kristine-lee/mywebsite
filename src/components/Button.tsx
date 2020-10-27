@@ -3,7 +3,6 @@ import styles from './Button.module.css'
 import { Link } from 'gatsby'
 
 const Button = () => (
-
   <button className={styles.button}>
     <Link to='/projects'>Check Out My Projects!</Link>
   </button>

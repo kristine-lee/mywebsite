@@ -1,0 +1,21 @@
+.frontText {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+  width: 65%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.frontText h2 {
+  text-transform: uppercase;
+  font-family: 'Overpass', sans-serif;
+  color: #937B7B;
+  align-content: space-around;
+  font-size: 3vw;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 1.6;
+
+}

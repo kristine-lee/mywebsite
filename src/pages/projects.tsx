@@ -1,13 +1,11 @@
 import React from 'react'
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Layout, SEO } from '../components'
 
 export default function Projects () {
   return (
     <Layout>
-    <SEO>
-      I've created some projects. Check them out here!
-    </SEO>
+    <SEO title="Projects" />
+      <h2>This page is under construction. In the meantime, check out my <a href="www.github.com/kristine-lee" aria-label="Kristine Lee Github">Github!</a></h2>
   </Layout>
   )
 }
