@@ -1,18 +1,18 @@
 .button {
-  position: absolute;
-  margin: 10 auto;
+  position: relative;
   border: 2px #A1C9EE solid;
   background-color: white;
   font-size: 1em;
   text-decoration: none;
   text-align: center;
   padding: 30px 30px;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
   /* flex-basis: content; */
 }
 
 .button:hover {
-  border-color: #3e8e41
+  border-color: #3e8e41;
+  background-color: #e3ecfa;
 }
 
 .button:hover:after {

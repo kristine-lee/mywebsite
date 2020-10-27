@@ -14,11 +14,11 @@ const IndexPage = () => (
     <SEO title="Home" />
     <FrontText>
     <h2>Hi, I'm Kristine Lee<br />A Full Stack Developer Interested In Figuring Out What Makes People Tick</h2>
+    <Button />
     </FrontText>
     {/* <div className='placeholder' style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}> */}
       <Image />
     {/* </div> */}
-    <Button />
   </Layout>
 )
 
