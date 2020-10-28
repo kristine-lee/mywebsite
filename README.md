@@ -6,5 +6,6 @@ Portfolio website. Built with:
 - Gatsby
 - React
 - CSS Modules
+- GraphQL
 
 Deployed with Vercel
