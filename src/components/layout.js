@@ -13,6 +13,12 @@ import Header from "./header"
 import Footer from './Footer'
 import "./layout.css"
 
+// declare interface LayoutProps {
+//   children: React.ReactNode,
+//   style: React.CSSProperties,
+//   onChange: React.FormEventHandler<HTMLInputElement>
+// }
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {

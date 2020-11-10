@@ -27,7 +27,11 @@ const Image = () => {
     }
   `)
 
-  return (<div className={styles.wrapper}><Img className={styles.frontImage} fluid={data.frontPageImage.childImageSharp.fluid} alt="cat" /></div>)
+  return (
+    <div className={styles.wrapper}>
+        <Img className={styles.frontImage} fluid={data.frontPageImage.childImageSharp.fluid} alt="cat" />
+    </div>
+    )
 }
 
 export default Image
