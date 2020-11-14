@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-// import wavesNegative from '../public/static/wavesNegative.svg'
+import styles from "./Header.module.css"
 
 // const StyledHeader = styled.div`
 //   position: absolute;
@@ -13,13 +13,7 @@ import React from "react"
 // `;
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      backgroundColor: `pink`,
-      marginBottom: `1.45rem`,
-      overflow: 'visible',
-    }}
-  >
+  <header className={styles.header} >
     {/* <StyledHeader /> */}
     <div
       style={{

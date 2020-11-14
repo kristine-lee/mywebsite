@@ -1,8 +1,41 @@
-import React, {useState, MouseEvent } from 'react';
-import { SEO, ProjectTable } from '../components'
-import { projectdata } from '../data/projectdata'
+import React, {useState } from 'react';
+import { SEO, ProjectTable } from '../components';
+import { UilAngleDoubleDown } from "@iconscout/react-unicons";
 import {Collapse} from 'react-collapse';
+import styled, { keyframes } from 'styled-components';
 
+const Bouncy = styled.div`
+  position: relative;
+  animation: ${bounce} 2s infinite;
+`
+
+const BouncyButton = styled.button`
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: hsl(243, 55%, 72%);
+  border: none;
+`
+
+const BouncyIcon = styled.i`
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: hsl(243, 55%, 72%);
+`
+const bounce = keyframes`
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-30px);
+  }
+  60% {
+      transform: translateY(-15px);
+  }
+`
 
 
 export default function Projects () {
@@ -15,9 +48,11 @@ export default function Projects () {
   return (
     <div className="project-section">
       <SEO title="Projects" />
-      <button onClick={handleClick}>Hihihih</button>
+      <Bouncy>
+        <BouncyButton onClick={handleClick}><UilAngleDoubleDown size="4em" color="#eb38"/></BouncyButton>
+      </Bouncy>
       <Collapse isOpened={isOpened}>
-      <ProjectTable />
+        <ProjectTable />
       </Collapse>
     </div>
   )

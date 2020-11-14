@@ -19,7 +19,7 @@ const ProjectCard: React.FC<CardProps> = props => {
     <div className={styles.projectCardContainer}>
       <div className={styles.projectCardInside}>
         <div className={styles.cardFront}>
-          <Img fluid={imageUrl} alt={alt} objectFit="cover"/>
+          <Img fluid={imageUrl} alt={alt} style={{objectFit: `cover`}}/>
           {/* <img src={imageUrl} /> */}
         </div>
         <div className={styles.cardBack}>

@@ -21,13 +21,9 @@ import "./layout.css"
 // }
 
 
-
 //TODO: https://csslayout.io/patterns/sidebar change the theme to a sidebar
 
-// const Background = styled.div`
-//   background-image: url('../public/static/wavesNegative.svg');
-//   background-size: cover;
-// `
+
 
 
 const Layout = ({ children }) => {
@@ -43,13 +39,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    {/* <Background> */}
       <Header siteTitle={data.site.siteMetadata.title} />
-      {/* </Background> */}
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: 1000,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >

@@ -10,7 +10,7 @@ const IndexPage = () => (
     <SEO title="Kristine Lee" />
     <FrontText>
     <h2>Hi, I'm Kristine Lee<br />A Full Stack Developer Interested In Figuring Out What Makes People Tick</h2>
-    <Button />
+    {/* <Button /> */}
     </FrontText>
     {/* <div className='placeholder' style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}> */}
       <Image />
