@@ -1,54 +1,30 @@
 import React from 'react';
-import { StaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import styles from './ProjectCard.module.css';
 
 type CardProps = {
-  projectTitle: string,
-  projectDescription: string,
-  imageUrl: string
+  // projectTitle: string,
+  // projectDescription: string,
+  imageUrl: string;
+  alt: string
 }
 
-const CardImage = ({ imgName }) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        allImageSharp {
-          edges {
-            node {
-              fluid(maxWidth: 300) {
-                ...GatsbyImageSharpFluid
-                originalName
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={data => {
-      const image = data.allImageSharp.edges.find(
-        edge => edge.node.fluid.originalName === imgName
-      )
-      if (!image) {
-        return null
-      }
-      return <Img fluid={image.node.fluid} />
-    }}
-  />
-)
 
-const ProjectCard: React.FC<CardProps> =({ projectTitle, projectDescription, imageUrl }) => {
+const ProjectCard: React.FC<CardProps> = props => {
 
+  const { imageUrl, alt } = props
 
   return (
     <div className={styles.projectCardContainer}>
       <div className={styles.projectCardInside}>
         <div className={styles.cardFront}>
-          <CardImage imgName={imageUrl} />
+          <Img fluid={imageUrl} alt={alt} objectFit="cover"/>
+          {/* <img src={imageUrl} /> */}
         </div>
         <div className={styles.cardBack}>
-          <h2>{ projectTitle }</h2>
-          <p>{ projectDescription }</p>
+          {/* <h2>{ projectTitle }</h2>
+          <p>{ projectDescription }</p> */}
         </div>
       </div>
     </div>
@@ -56,3 +32,4 @@ const ProjectCard: React.FC<CardProps> =({ projectTitle, projectDescription, ima
 }
 
 export default ProjectCard
+

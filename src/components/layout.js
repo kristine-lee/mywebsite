@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { createGlobalStyle } from 'styled-components'
 
 import Header from "./header"
 import Footer from './Footer'
@@ -18,6 +19,11 @@ import "./layout.css"
 //   style: React.CSSProperties,
 //   onChange: React.FormEventHandler<HTMLInputElement>
 // }
+
+
+
+//TODO: https://csslayout.io/patterns/sidebar change the theme to a sidebar
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -40,7 +46,7 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
+          <main>{children}</main>
         {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
