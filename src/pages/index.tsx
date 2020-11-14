@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import 'pattern.css/dist/pattern.css'
 
 import { Layout, Image, SEO, Button, FrontText } from '../components'
 import Projects from './projects'

@@ -29,7 +29,9 @@ const Image = () => {
 
   return (
     <div className={styles.wrapper}>
-        <Img className={styles.frontImage} fluid={data.frontPageImage.childImageSharp.fluid} alt="cat" />
+      <div class="pattern-dots-md gray-light">
+        <Img className={styles.frontImage} fluid={data.frontPageImage.childImageSharp.fluid} style={{objectFit: `cover`}} alt="cat" />
+        </div>
     </div>
     )
 }
