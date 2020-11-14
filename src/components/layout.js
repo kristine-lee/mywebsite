@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components';
 
 import Header from "./header"
 import Footer from './Footer'
@@ -24,6 +24,11 @@ import "./layout.css"
 
 //TODO: https://csslayout.io/patterns/sidebar change the theme to a sidebar
 
+// const Background = styled.div`
+//   background-image: url('../public/static/wavesNegative.svg');
+//   background-size: cover;
+// `
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -38,7 +43,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
+    {/* <Background> */}
       <Header siteTitle={data.site.siteMetadata.title} />
+      {/* </Background> */}
       <div
         style={{
           margin: `0 auto`,

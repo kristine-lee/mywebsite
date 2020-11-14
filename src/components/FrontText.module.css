@@ -24,7 +24,7 @@ section#intro {
   background: #fff4e6;
   height: 80vh;
   margin-top: -116px;
-  position: relative;
+  /* position: relative; */
 }
 
 section#intro::before {
@@ -34,7 +34,7 @@ section#intro::before {
   background-position: center center;
   border-radius: 50%;
   display: block;
-  position: absolute;
+  /* position: absolute; */
   bottom: -180px;
   right: 170px;
   z-index: 5;
