@@ -3,48 +3,117 @@
   width: calc(100%-3px);
   height: 250px;
   perspective: 1000px;
+  position: relative;
 }
 
 .projectCardContainer:focus {
   outline: 0;
 }
 
-.projectCardInside{
+.projectCardContainer Img {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.projectCardContainer .overlay {
+  background: rgba(0, 0, 0, 0.829);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.projectCardContainer:hover .overlay{
+  opacity: 2;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.projectCardContainer:hover .text{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+/* .projectCardDiv{
   position: relative;
   width: 100%;
   height: 100%;
   text-align: end;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.projectCardContainer:hover .projectCardInside {
-  transform: rotateY(180deg);
-}
-
-/* .projectCardContainer:hover .projectCardInside,
-.projectCard:focus .projectCardInside {
-  transform: rotateY(180deg);
+  transition: 0.5s ease;
 } */
+
+/* .overlay {
+  position: absolute;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #00afb9;
+}
+
+
+
+.projectCardContainer:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  text-align: end;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} */
+
+/* .projectCardContainer:hover .projectCardInside {
+  transform: rotateY(180deg);
+}
 
 .cardFront, .cardBack {
   position: absolute;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
+  /* backface-visibility: hidden;
+} */
 
-.cardFront {
+/* .cardFront {
   /* background-color: blueviolet; */
-  color: black;
+  /* color: black; */
   /* z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center; */
-}
+/* } */
 
-.cardBack {
+/* .cardBack {
   background-color: linear-gradient(to right, #4364f7, #6fb1fc);
   color: white;
   transform: rotateY(180deg);
@@ -52,8 +121,8 @@
   display: flex;
   justify-content: center;
   align-items: center; */
-}
+/* }
 
 .cardBack h2 {
   color: black;
-}
+} */

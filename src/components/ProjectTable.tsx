@@ -3,9 +3,6 @@ import { useStaticQuery, graphql } from "gatsby";
 import styles from './ProjectTable.module.css';
 import ProjectCard from './ProjectCard';
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col'
 
 const ProjectTable: React.FC<{}> = props => {
 

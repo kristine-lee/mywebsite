@@ -17,15 +17,11 @@ const ProjectCard: React.FC<CardProps> = props => {
 
   return (
     <div className={styles.projectCardContainer}>
-      <div className={styles.projectCardInside}>
-        <div className={styles.cardFront}>
-          <Img fluid={imageUrl} alt={alt} style={{objectFit: `cover`}}/>
-        </div>
-        <div className={styles.cardBack}>
-          {/* <h2>{ projectTitle }</h2>
-          <p>{ projectDescription }</p> */}
-        </div>
-      </div>
+      <div className={styles.overlay}></div>
+      <Img fluid={imageUrl} alt={alt} style={{objectFit: `cover`}} role="img" aria-label="screenshot of my project" />
+          <div className={styles.text}>
+            This is something that I'd developed
+          </div>
     </div>
   )
 }
