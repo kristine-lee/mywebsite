@@ -3,25 +3,11 @@ import PropTypes from "prop-types"
 import React from "react"
 import styles from "./Header.module.css"
 
-// const StyledHeader = styled.div`
-//   position: absolute;
-//   width: 100vw;
-//   height: 100vh;
-//   background-image: linear-gradient(#ff9d2f, #ff6126)';
-//   transform: skewY(-6deg);
-//   transform-origin: top left;
-// `;
+import Row from 'react-bootstrap/Row'
+
 
 const Header = ({ siteTitle }) => (
   <header className={styles.header} >
-    {/* <StyledHeader /> */}
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -33,7 +19,6 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-    </div>
   </header>
 )
 

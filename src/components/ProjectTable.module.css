@@ -24,3 +24,26 @@
     width: calc(33.3333% - 2rem);
   }
 }
+/***************************************************************************/
+
+.flexGridContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexGridContainer .col {
+  width: 32%;
+  flex-direction: column;
+  background-color: pink;
+}
+
+@media (max-width: 400px) {
+  .flexGridContainer {
+    display: block;
+  }
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+

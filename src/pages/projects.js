@@ -4,6 +4,18 @@ import { UilAngleDoubleDown } from "@iconscout/react-unicons";
 import {Collapse} from 'react-collapse';
 import styled, { keyframes } from 'styled-components';
 
+const bounce = keyframes`
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-30px);
+  }
+  60% {
+      transform: translateY(-15px);
+  }
+`
+
 const Bouncy = styled.div`
   position: relative;
   animation: ${bounce} 2s infinite;
@@ -18,24 +30,13 @@ const BouncyButton = styled.button`
   border: none;
 `
 
-const BouncyIcon = styled.i`
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  fill: hsl(243, 55%, 72%);
-`
-const bounce = keyframes`
-  0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-  }
-  40% {
-      transform: translateY(-30px);
-  }
-  60% {
-      transform: translateY(-15px);
-  }
-`
+// const BouncyIcon = styled.i`
+//   position: absolute;
+//   top: 40%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   fill: hsl(243, 55%, 72%);
+// `
 
 
 export default function Projects () {

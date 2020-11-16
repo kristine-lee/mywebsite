@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styles from './Image_Front.module.css'
 
+
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
  * images with lazy loading and reduced file sizes. The image is loaded using a
@@ -28,11 +29,11 @@ const Image = () => {
   `)
 
   return (
-    <div className={styles.wrapper}>
-      <div class="pattern-dots-md gray-light">
+    // <div className={styles.wrapper}>
+      // <div class="pattern-dots-md gray-light">
         <Img className={styles.frontImage} fluid={data.frontPageImage.childImageSharp.fluid} style={{objectFit: `cover`}} alt="cat" />
-        </div>
-    </div>
+      // </div>
+    //</div>
     )
 }
 

@@ -4,11 +4,12 @@
  * having to figure out which file they belong to!
  */
 
-export {default as Button} from './Button'
+export {default as Button} from './legacy/Button'
 export {default as Footer} from './Footer'
 export {default as FrontText} from './FrontText'
 export {default as Image} from './image.js'
-export {default as Layout} from './layout.js'
+export {default as Layout} from './Layout'
 export {default as SEO} from './seo'
 export {default as ProjectCard} from './ProjectCard'
 export {default as ProjectTable} from './ProjectTable'
+export {default as FrontPage} from './FrontPage'

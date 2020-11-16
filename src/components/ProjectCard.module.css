@@ -1,7 +1,7 @@
 .projectCardContainer{
   background-color: transparent;
-  width: 300px;
-  height: 200px;
+  width: calc(100%-3px);
+  height: 250px;
   perspective: 1000px;
 }
 

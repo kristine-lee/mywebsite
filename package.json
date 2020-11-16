@@ -13,6 +13,7 @@
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sharp": "^2.6.28",
+    "gatsby-plugin-theme-ui": "^0.3.3",
     "gatsby-plugin-transition-link": "^1.20.5",
     "gatsby-plugin-tslint": "0.0.2",
     "gatsby-source-filesystem": "^2.5.0",
@@ -22,11 +23,13 @@
     "pattern.css": "^1.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-bootstrap": "^1.4.0",
     "react-collapse": "^5.0.1",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "rebass": "^4.0.7",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "theme-ui": "^0.3.3"
   },
   "devDependencies": {
     "@types/react": "^16.9.49",

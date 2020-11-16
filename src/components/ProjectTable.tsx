@@ -1,7 +1,11 @@
 import React from 'react';
 import { useStaticQuery, graphql } from "gatsby";
 import styles from './ProjectTable.module.css';
-import ProjectCard from './ProjectCard'
+import ProjectCard from './ProjectCard';
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
 
 const ProjectTable: React.FC<{}> = props => {
 
@@ -10,7 +14,7 @@ const ProjectTable: React.FC<{}> = props => {
   query {
     djparty: file(relativePath: { eq: "projects/djparty.png" }) {
       childImageSharp {
-        fluid(maxWidth: 500, fit: COVER) {
+        fluid(maxWidth: 400, maxHeight: 300, fit: COVER) {
           base64
           aspectRatio
           src
@@ -21,7 +25,7 @@ const ProjectTable: React.FC<{}> = props => {
     }
     mtaforeveryone: file(relativePath: { eq: "projects/mtaforeveryone.png" }) {
       childImageSharp {
-        fluid(maxWidth: 300, fit: COVER) {
+        fluid(maxWidth: 400, maxHeight: 300, fit: COVER) {
           base64
           aspectRatio
           src
@@ -32,7 +36,7 @@ const ProjectTable: React.FC<{}> = props => {
     }
    zapdos: file(relativePath: { eq: "projects/zapdos.png" }) {
       childImageSharp {
-        fluid(maxWidth: 300, fit: COVER) {
+        fluid(maxWidth: 400, maxHeight: 300, fit: COVER) {
           base64
           aspectRatio
           src
@@ -45,18 +49,17 @@ const ProjectTable: React.FC<{}> = props => {
 `)
 
   return (
-    <div className={styles.container}>
-      <div className={styles.grid}>
-        <div className={styles.cell}>
+    // <div className={styles.container}>
+      <div className={styles.flexGridContainer}>
+        <div className={styles.col}>
           <ProjectCard imageUrl={data.djparty.childImageSharp.fluid} alt={"djparty"} />
-        </div>
-        <div className={styles.cell}>
+         </div>
+         <div className={styles.col}>
           <ProjectCard imageUrl={data.mtaforeveryone.childImageSharp.fluid} alt={"mtaforeveryone"} />
-        </div>
-        <div className={styles.cell}>
+          </div>
+          <div className={styles.col}>
           <ProjectCard imageUrl={data.zapdos.childImageSharp.fluid} alt={"zapdos shoes"} />
         </div>
-      </div>
     </div>
   )
 }
