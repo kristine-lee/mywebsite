@@ -15,7 +15,7 @@ import styles from './SocialIcons.module.css'
 
 const SocialIcons: React.FC<{}> = () => {
   return (
-    <div className="social-icons">
+    <div className={styles.socialIcons}>
     <a href="https://linkedin.com/in/kristine-d-lee" aria-label="linkedin"><UilLinkedin /></a>
     <a href="https://github.com/kristine-lee" aria-label="github"><UilGithub /></a>
     </div>

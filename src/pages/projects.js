@@ -15,6 +15,15 @@ const bounce = keyframes`
       transform: translateY(-15px);
   }
 `
+//TODO: animation on the divider
+// const loadDivider = keyframes`
+//   0% {
+//     transform: translateX(0);
+//   }
+//   100% {
+//     transform: translateX(100%);
+//   }
+// `
 
 const Bouncy = styled.div`
   position: relative;
@@ -38,7 +47,14 @@ const BouncySpan = styled.span`
     transform: translate(-50%, -50%);
     border: none;
 `
-
+const Divider = styled.hr`
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin: 1rem;
+`
+//animation: ${loadDivider} 3s linear forwards;
 
 const ProjectSection = styled.div`
   padding: 1rem;
@@ -58,11 +74,14 @@ export default function Projects () {
           <BouncySpan><UilAngleDoubleDown size="4em" color="#937B7B" onClick={handleClick}/></BouncySpan>
       </Bouncy>
       <Collapse isOpened={isOpened}>
+        <Divider />
         <ProjectTable />
       </Collapse>
     </ProjectSection>
   )
 }
+
+//TODO: close the arrow once it's clicked
 
 
 // export const getProjectData = graphql`
