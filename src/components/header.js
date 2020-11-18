@@ -6,15 +6,15 @@ import styles from "./Header.module.css"
 
 const Header = ({ siteTitle }) => (
   <header className={styles.header} >
-      <h1 style={{ margin: 0 }}>
+      <h1>
         <Link
           to="/"
           style={{
-            color: `black`,
             textDecoration: `none`,
+            color: '#020826'
           }}
         >
-          {siteTitle}
+        Hi, I'm  {siteTitle}
         </Link>
       </h1>
   </header>

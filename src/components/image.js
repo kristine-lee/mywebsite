@@ -18,7 +18,7 @@ import styles from './Image_Front.module.css'
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      frontPageImage: file(relativePath: { eq: "IMG_3466.jpeg" }) {
+      frontPageImage: file(relativePath: { eq: "frontpage.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -30,9 +30,7 @@ const Image = () => {
 
   return (
     // <div className={styles.wrapper}>
-      // <div class="pattern-dots-md gray-light">
-        <Img className={styles.frontImage} fluid={data.frontPageImage.childImageSharp.fluid} style={{objectFit: `cover`}} alt="cat" />
-      // </div>
+        <Img className={styles.frontImage} fluid={data.frontPageImage.childImageSharp.fluid} alt="cat" />
     //</div>
     )
 }

@@ -21,22 +21,22 @@ const Bouncy = styled.div`
   animation: ${bounce} 2s infinite;
 `
 
-const BouncyButton = styled.button`
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  fill: hsl(243, 55%, 72%);
-  border: none;
-`
-
-// const BouncyIcon = styled.i`
+// const BouncyButton = styled.button`
 //   position: absolute;
 //   top: 40%;
 //   left: 50%;
 //   transform: translate(-50%, -50%);
 //   fill: hsl(243, 55%, 72%);
+//   border: none;
 // `
+
+const BouncySpan = styled.span`
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+`
 
 
 export default function Projects () {
@@ -50,7 +50,7 @@ export default function Projects () {
     <div className="project-section">
       <SEO title="Projects" />
       <Bouncy>
-        <BouncyButton onClick={handleClick}><UilAngleDoubleDown size="4em" color="#eb38"/></BouncyButton>
+          <BouncySpan><UilAngleDoubleDown size="4em" color="#eb38" onClick={handleClick}/></BouncySpan>
       </Bouncy>
       <Collapse isOpened={isOpened}>
         <ProjectTable />

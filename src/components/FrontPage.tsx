@@ -3,11 +3,8 @@ import styles from './FrontPage.module.css';
 import FrontText from './FrontText'
 import Image from './image'
 
-type FrontPageProps = {
-  children: React.ReactNode
-}
 
-const FrontPage: React.FC<FrontPageProps> = () => {
+const FrontPage: React.FC<{}> = () => {
   return (
     <div className={styles.frontpageContainer}>
       <div className={styles.column}>
@@ -18,8 +15,10 @@ const FrontPage: React.FC<FrontPageProps> = () => {
       </div>
       <div className={styles.break} />
       <div className={styles.row}>
-        <p>I decided to take the plunge into software engineering after realizing that I loved problem solving. </p>
-        <p>Click the Arrow for my Projects</p>
+        <p><span>A former nonprofit fundraiser, I decided to take the plunge into software engineering after realizing that I wanted to do something with more problem solving. </span></p>
+        <p><span>Originally from the South, I now live in NYC. I don't have a regional accent (I think!), but I can make preeeetty good collard greens. </span></p>
+        <p>In my free time, I enjoy hiking, volunteering, going to used bookstores, and hanging out with my foster cat.</p>
+        <p>Click the arrow to see my projects!</p>
       </div>
     </div>
   )

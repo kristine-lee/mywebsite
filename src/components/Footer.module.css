@@ -7,6 +7,7 @@
   position: absolute;
   width: 100%;
   padding: 1.45rem 1.0875rem;
+  margin-top: 0.5rem;
 }
 @media only screen and (min-width: 768px) {
   .footer {
@@ -18,7 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-family: 'Overpass', sans-serif;
+  /* font-family: 'Overpass', sans-serif; */
   font-style: italic;
   font-weight: 900;
   font-size: 30px;

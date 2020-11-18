@@ -3,6 +3,7 @@
   flex-grow: 1;
   width: 350px;
   margin: 20px;
+  transform: translate(10px, -10px);
 }
 
 .wrapper {

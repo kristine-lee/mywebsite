@@ -29,12 +29,13 @@
 .flexGridContainer {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1em;
 }
 
 .flexGridContainer .col {
   width: 32%;
   flex-direction: column;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 @media (max-width: 400px) {

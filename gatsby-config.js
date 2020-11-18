@@ -15,6 +15,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
@@ -35,7 +43,10 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Overpass`
+            family: `Source Sans Pro`,
+          },
+          {
+            family: `Source Serif Pro`,
           },
         ]}
       },
