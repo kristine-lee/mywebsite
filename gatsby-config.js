@@ -9,6 +9,21 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Source Sans Pro",
+            },
+            {
+              family: "Source Serif Pro",
+            },
+          ],
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -38,18 +53,6 @@ module.exports = {
         icon: `src/images/avatar.svg`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Source Sans Pro`,
-          },
-          {
-            family: `Source Serif Pro`,
-          },
-        ]}
-      },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
