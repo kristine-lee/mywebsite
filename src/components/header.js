@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "gatsby";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import styles from "./Header.module.css";
 
 const Header = ({ siteTitle }) => {
@@ -24,12 +24,12 @@ const Header = ({ siteTitle }) => {
 }
 
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+// Header.propTypes = {
+//   siteTitle: PropTypes.string,
+// }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+// Header.defaultProps = {
+//   siteTitle: ``,
+// }
 
 export default Header
