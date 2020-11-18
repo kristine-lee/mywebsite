@@ -11,6 +11,8 @@ import styles from './SocialIcons.module.css'
 //   `)
 // }
 
+//TODO: add social icons to the right side of the header
+
 const SocialIcons: React.FC<{}> = () => {
   return (
     <div className="social-icons">
