@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "gatsby";
 // import PropTypes from "prop-types";
 import styles from "./Header.module.css";
+import SocialIcons from './SocialIcons'
 
 const HeaderComponent = ({ siteTitle }) => {
   return (
@@ -19,6 +20,7 @@ const HeaderComponent = ({ siteTitle }) => {
         </Link>
       </h1>
   </header>
+  <SocialIcons />
   </>
   )
 }

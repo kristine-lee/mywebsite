@@ -8,11 +8,10 @@ import styles from './FrontText.module.css';
 // }
 
 const FrontTextContainer: React.FC<{}> = props => {
-  // const { children, content } = props;
 
   return (
     <div className={styles.frontText}>
-      <h2>A Full Stack Developer Interested In Figuring Out What Makes People Tick</h2>
+      <h2>A <span id="highlight">Full Stack Developer</span> Interested In Figuring Out What Makes People Tick</h2>
     </div>
   )
 }

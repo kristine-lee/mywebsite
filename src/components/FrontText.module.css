@@ -1,14 +1,18 @@
+
+
 .frontText {
   display: flex;
   /* flex-flow: wrap; */
   /* flex: 1; */
   width: 65%;
-  justify-content: center;
+  justify-content: right;
   align-items: right;
   margin: 0.5rem;
-  padding-left: 4rem;
-
+  padding-left: 10vw;
+  padding-right: -1rem;
 }
+
+
 
 .frontText h2 {
   text-transform: uppercase;
@@ -19,7 +23,7 @@
   font-weight: 200;
   line-height: 1.6;
   overflow: visible;
-
+  text-shadow: 2px 2px 0px #D3D3D3;
 }
 
 .frontText::before {
@@ -36,4 +40,7 @@
   z-index: 5;
 }
 
-
+span#highlight {
+  background-color: #f5d442;
+  z-index: 6;
+}

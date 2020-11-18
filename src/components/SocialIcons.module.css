@@ -1,11 +1,17 @@
-.social-icons{
-  position: absolute;
+.socialIcons{
   display: inline-block;
-  float: right;
+  position: absolute;
+  top: 5vh;
+  right: 5vw;
 }
 
-.social-icons a:hover {
-  color: white;
+.socialIcons a{
+  color: black;
+  margin: 0.5rem;
+}
+
+.socialIcons a:hover {
+  color: lightgray;
 }
 
 

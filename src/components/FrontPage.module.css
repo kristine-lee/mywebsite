@@ -11,6 +11,12 @@
   flex-direction: column;
   /* border: red solid 2px; */
   align-items: flex-end;
+  margin-bottom: -0.6rem;
+}
+
+.column Img {
+  animation: fadeIn ease-in-out 0.5s;
+  -webkit-animation: fadeIn ease-in-out 0.5s;
 }
 
 .row {
@@ -18,12 +24,15 @@
   /* border: green solid 3px; */
   align-items: center;
   width: 90vw;
-  margin: 1em;
   align-content: center;
   padding: 4rem;
 }
 
 .row > p {
+  animation: initialLoad 300ms ease-in 200ms;
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  opacity: 0;
   align-self: center;
   padding-left: 3rem;
   padding-right: 4rem;
@@ -38,4 +47,39 @@ span {
   flex-basis: 100%;
   height: 0;
   /* border: black solid 2px; */
+}
+
+
+@keyframes initialLoad {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes initialLoad {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity:1}
+  }
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }

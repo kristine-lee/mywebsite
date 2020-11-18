@@ -4,7 +4,13 @@
   height: 250px;
   perspective: 1000px;
   position: relative;
+
 }
+/* @media (min-width: 768px) {
+    max-width: none;
+    width: calc(50% - 50px);
+    margin: 0 25px 33px;
+} */
 
 .projectCardContainer > * {
   position: absolute;
