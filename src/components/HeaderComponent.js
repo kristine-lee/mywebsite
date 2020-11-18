@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 // import PropTypes from "prop-types";
 import styles from "./Header.module.css";
 
-const Header = ({ siteTitle }) => {
+const HeaderComponent = ({ siteTitle }) => {
   return (
     <>
       <header className={styles.header}>
@@ -32,4 +32,4 @@ const Header = ({ siteTitle }) => {
 //   siteTitle: ``,
 // }
 
-export default Header
+export default HeaderComponent

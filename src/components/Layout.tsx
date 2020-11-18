@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-// import { Grid, GridMain } from '../styles';
-import Header from './Header';
+import HeaderComponent from './HeaderComponent';
 import Footer from './Footer';
 
 import './Layouut.css';
@@ -28,7 +27,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
   return (
     <>
     <div className="all">
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <HeaderComponent siteTitle={data.site.siteMetadata.title} />
       <div className="waveDivider">
       <main>{children}</main>
 </div>
