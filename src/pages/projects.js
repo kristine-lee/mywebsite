@@ -18,7 +18,8 @@ const bounce = keyframes`
 
 const Bouncy = styled.div`
   position: relative;
-  animation: ${bounce} 2s infinite;
+  animation: ${bounce} 2s;
+  animation-iteration-count: ${props => props.isOpened ? 1 : `infinite`};
 `
 
 // const BouncyButton = styled.button`
@@ -39,6 +40,10 @@ const BouncySpan = styled.span`
 `
 
 
+const ProjectSection = styled.div`
+  padding: 1rem;
+`
+
 export default function Projects () {
   const [isOpened, setIsOpened] = useState(false);
 
@@ -47,15 +52,15 @@ export default function Projects () {
     setIsOpened(!isOpened)
   }
   return (
-    <div className="project-section">
+    <ProjectSection>
       <SEO title="Projects" />
-      <Bouncy>
-          <BouncySpan><UilAngleDoubleDown size="4em" color="#eb38" onClick={handleClick}/></BouncySpan>
+      <Bouncy isOpened={isOpened}>
+          <BouncySpan><UilAngleDoubleDown size="4em" color="#937B7B" onClick={handleClick}/></BouncySpan>
       </Bouncy>
       <Collapse isOpened={isOpened}>
         <ProjectTable />
       </Collapse>
-    </div>
+    </ProjectSection>
   )
 }
 

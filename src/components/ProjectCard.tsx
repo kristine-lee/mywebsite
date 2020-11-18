@@ -3,8 +3,6 @@ import Img from "gatsby-image";
 import styles from './ProjectCard.module.css';
 
 type CardProps = {
-  // projectTitle: string,
-  // projectDescription: string,
   imageUrl: string;
   alt: string
 }
@@ -19,7 +17,8 @@ const ProjectCard: React.FC<CardProps> = props => {
       <div className={styles.overlay}></div>
       <Img fluid={imageUrl} alt={alt} style={{objectFit: `cover`}} role="img" aria-label="screenshot of my project" />
           <div className={styles.text}>
-            This is something that I'd developed
+            This is a project that I've developed. Details coming!
+            Please take a look at my <a href="https://github.com/kristine-lee">Github</a> for the code!
           </div>
     </div>
   )
