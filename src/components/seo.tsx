@@ -10,7 +10,19 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+
+interface SEOProps {
+  description?: string;
+  lang?: string;
+  meta?: [];
+  title: string;
+  pathname?: string;
+}
+
+// function SEO({ description, lang, meta, title, pathname })
+
+const SEO: React.FC<SEOProps> = props =>  {
+  const { description, lang, meta, title, pathname } = props;
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,13 +31,16 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            keywords
+            siteUrl
           }
         }
       }
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
+  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
 
   return (
     <Helmet
@@ -67,8 +82,22 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
-    />
+        {
+          name: "keywords",
+          content: site.siteMetadata.keywords.join(","),
+        },
+      ].concat(meta || [])}
+      link={
+        canonical
+          ? [
+              {
+                rel: "canonical",
+                href: canonical,
+              },
+            ]
+          : []
+      }
+  />
   )
 }
 
@@ -78,11 +107,12 @@ SEO.defaultProps = {
   description: ``,
 }
 
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-}
+// SEO.propTypes = {
+//   description: PropTypes.string,
+//   lang: PropTypes.string,
+//   meta: PropTypes.arrayOf(PropTypes.object),
+//   title: PropTypes.string.isRequired,
+
+// }
 
 export default SEO

@@ -1,0 +1,50 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.cell img {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
+}
+/***************************************************************************/
+
+.flexGridContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.flexGridContainer .col {
+  width: 32%;
+  flex-direction: column;
+  /* background-color: pink; */
+}
+
+@media (max-width: 400px) {
+  .flexGridContainer {
+    display: block;
+  }
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+
