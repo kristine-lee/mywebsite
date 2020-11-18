@@ -1,4 +1,4 @@
-<a href="www.kristinelee.tech">kristinelee.tech</a>
+<a href="https://www.kristinelee.tech">kristinelee.tech</a>
 
 Portfolio website. Built with:
 
