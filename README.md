@@ -1,6 +1,6 @@
 <a href="https://www.kristinelee.tech">kristinelee.tech</a>
 
-##Portfolio website
+## Portfolio website
 Built with:
 
 - Typescript
@@ -11,8 +11,9 @@ Built with:
 
 Deployed with Vercel
 
-##Running on your local machine
+## Running on your local machine
 Fork this repo
+```bash
 git clone
 npm install 
 gatsby develop
