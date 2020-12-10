@@ -50,9 +50,9 @@ const Divider = styled.hr`
 const ProjectSection = styled.div`
   padding: 1rem;
 `
-const StyledProjectHeader = styled.div`
+// const StyledProjectHeader = styled.div`
 
-`
+// `
 
 export default function Projects () {
   const [isOpened, setIsOpened] = useState(false);
@@ -62,7 +62,7 @@ export default function Projects () {
     setIsOpened(!isOpened)
   }
   return (
-    <ProjectSection>
+    <ProjectSection id="projects">
       <SEO title="Projects" />
       <Bouncy isOpened={isOpened}>
           <BouncySpan><UilAngleDoubleDown size="4em" color="#937B7B" onClick={handleClick}/></BouncySpan>

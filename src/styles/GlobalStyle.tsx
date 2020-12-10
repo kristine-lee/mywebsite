@@ -13,6 +13,8 @@ const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
   font-family: 'Source Sans Pro', -apple-system, system-ui, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1
@@ -26,6 +28,8 @@ p
 
 main {
   margin: 0 auto;
+  // margin-top: 30px;
+  // height: 100vh;
 }
 
 hr {

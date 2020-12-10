@@ -18,12 +18,13 @@ const HeaderComponent = ({ siteTitle }) => {
         Hi, I'm  {siteTitle}
         </Link>
       </h1>
+      <Link to="#projects">Projects</Link>
       <hr />
   </header>
   </>
   )
 }
-
+//TODO: https://www.wcj.io/blog/gatsby-smooth-scrolling//
 
 // Header.propTypes = {
 //   siteTitle: PropTypes.string,

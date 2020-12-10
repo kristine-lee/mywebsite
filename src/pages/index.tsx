@@ -10,7 +10,6 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Kristine Lee" />
     <FrontPage />
-   {/* <div className='placeholder' style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}> */}
     <Projects />
 
   </Layout>
