@@ -1,24 +1,22 @@
 import React from 'react';
 // import { useStaticQuery, graphql } from 'gatsby';
-import { UilLinkedin, UilGithub } from '@iconscout/react-unicons';
+import { UilLinkedin, UilGithub, UilEnvelope } from '@iconscout/react-unicons';
 import styles from './SocialIcons.module.css'
-
-// const SocialIcons: React.FC<{}> = () => {
-//   const data = useStaticQuery(graphql`
-//     query {
-//       socialLinks: file(relativePath: "")
-//     }
-//   `)
-// }
-
-//TODO: add social icons to the right side of the header
+import sr, { scrollOption } from '../utils/sr';
 
 const SocialIcons: React.FC<{}> = () => {
+
+  const sideIconRef = React.useRef(null);
+
+  React.useEffect(() => {
+    sr.reveal(sideIconRef.current, scrollOption());
+  }, []);
   return (
-    <div className={styles.socialIcons}>
-    <a href="https://linkedin.com/in/kristine-d-lee" aria-label="linkedin"><UilLinkedin /></a>
-    <a href="https://github.com/kristine-lee" aria-label="github"><UilGithub /></a>
-    </div>
+    <div className={styles.socialIcons} ref={sideIconRef}>
+      <a href="https://linkedin.com/in/kristine-d-lee" aria-label="linkedin"><UilLinkedin /></a>
+      <a href="https://github.com/kristine-lee" aria-label="github"><UilGithub /></a>
+      <a href="mailto:kristinesollee@gmail.com" aria-label="email"><UilEnvelope /></a>
+     </div>
   )
 }
 

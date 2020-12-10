@@ -31,15 +31,6 @@ const Bouncy = styled.div`
   animation-iteration-count: ${props => props.isOpened ? 1 : `infinite`};
 `
 
-// const BouncyButton = styled.button`
-//   position: absolute;
-//   top: 40%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   fill: hsl(243, 55%, 72%);
-//   border: none;
-// `
-
 const BouncySpan = styled.span`
     position: absolute;
     top: 40%;
@@ -58,6 +49,9 @@ const Divider = styled.hr`
 
 const ProjectSection = styled.div`
   padding: 1rem;
+`
+const StyledProjectHeader = styled.div`
+
 `
 
 export default function Projects () {

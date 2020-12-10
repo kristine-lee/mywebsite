@@ -8,7 +8,7 @@ import sr, { scrollOption } from '../utils/sr';
 //   content: string
 // }
 
-const FrontTextContainer: React.FC<{}> = props => {
+const FrontTextContainer: React.FC<{}> = () => {
 
   const frontRef = React.useRef(null);
 

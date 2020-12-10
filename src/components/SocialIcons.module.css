@@ -1,11 +1,17 @@
 .socialIcons{
   display: inline-block;
-  position: absolute;
-  top: 5vh;
+  position: fixed;
+  top: 50vh;
   right: 5vw;
+  border-left: 2px solid rgb(190, 196, 190);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.socialIcons a{
+.socialIcons a {
+  display: block;
+  transition: all 0.3s ease;
   color: black;
   margin: 0.5rem;
 }

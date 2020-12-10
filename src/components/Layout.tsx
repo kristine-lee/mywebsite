@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import HeaderComponent from './HeaderComponent';
 import Footer from './Footer';
 import Loader from './Loader';
+import SocialIcons from './SocialIcons';
 import GlobalStyle from '../styles/GlobalStyle';
 
 import './Layouut.css';
@@ -31,12 +32,13 @@ const Layout: React.FC<LayoutProps> = (props) => {
   return (
     <>
     <div className="all">
-    <HeaderComponent siteTitle={data.site.siteMetadata.title} />
       {isLoading ?
       <Loader /> :
       <>
         <GlobalStyle />
+        <HeaderComponent siteTitle={data.site.siteMetadata.title} />
           <div className="waveDivider">
+            <SocialIcons />
             <main>{children}</main>
           </div>
        </>
