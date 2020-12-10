@@ -12,14 +12,14 @@ header {
   padding: 16
 }
 
-main {
+/* main {
   flex: 1 1 auto;
   padding: 16;
   flex-direction: column;
   z-index: 2;
-}
+} */
 
-footer {
+/* footer {
   padding: 16
 }
 
@@ -34,7 +34,7 @@ h3
 {
   font-family: 'Source Serif Pro';
   color: #937B7B;
-}
+} */
 
 /* section {
   display: -webkit-box;

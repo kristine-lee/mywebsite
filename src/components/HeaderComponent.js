@@ -19,6 +19,7 @@ const HeaderComponent = ({ siteTitle }) => {
         Hi, I'm  {siteTitle}
         </Link>
       </h1>
+      <hr />
   </header>
   <SocialIcons />
   </>

@@ -9,12 +9,12 @@ header {
 }
 
 header h1 {
-  margin: 0;
+  margin: 0 auto;
   padding-left: 3rem;
   color: #020826;
   font-size: 3.2vw;
 }
-
+/* TODO:responsive styling for the header text (make it bigger on mobile) */
 
 /*
 header::after {
