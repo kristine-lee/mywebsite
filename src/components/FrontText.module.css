@@ -39,7 +39,10 @@
   z-index: 5;
 }
 
-span#highlight {
-  background-color: #f5d442;
-  z-index: 6;
+span {
+  padding: 0 0.5rem;
+}
+
+span.highlight {
+  background: #f5d442;
 }
