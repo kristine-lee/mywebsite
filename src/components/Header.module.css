@@ -27,3 +27,9 @@ header::after {
   opacity: 0.5;
   filter: drop-shadow(10px 5px 1px rgb(12, 65, 12));
 } */
+
+/*    opacity: 25%;
+    padding: 0;
+    transform: skewY(8deg);
+    background-image: repeating-linear-gradient(45deg, #336666 0, #336666 3px, transparent 3px, transparent 30px);
+    transform-origin: left;*/
