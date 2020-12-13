@@ -12,9 +12,9 @@ Built with:
 Deployed with Vercel
 
 ## In Process
-Currently in the process of converting CSS Modules to CSS-in-JS, utilizing Styled Components
-Expanding the Project section
-Lots of styling changes! 
+- Currently in the process of converting CSS Modules to CSS-in-JS, utilizing Styled Components
+- Expanding the Project section
+- Lots of styling changes! 
 
 ## Running on your local machine
 Fork this repo
