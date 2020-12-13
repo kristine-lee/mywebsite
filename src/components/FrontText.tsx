@@ -18,7 +18,7 @@ const FrontTextContainer: React.FC<{}> = () => {
 
   return (
     <div className={styles.frontText} ref={frontRef}>
-      <h2>A <span className={styles.highlight}>Full Stack Developer</span> Interested In Figuring Out What Makes People Tick</h2>
+      <h2>Hi, I'm Kristine Lee <br /> A <span className={styles.highlight}>Full Stack Developer</span> Interested In Figuring Out What Makes People Tick</h2>
     </div>
   )
 }
