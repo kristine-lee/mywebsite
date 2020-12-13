@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   align-content: center;
   transition: var(--transition);
 
-  @media (mad-width: ${({ theme }) => theme.breakpoints.lg}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
     padding: 0 40px;
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {

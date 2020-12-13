@@ -44,10 +44,10 @@ const Layout: React.FC<LayoutProps> = (props) => {
       <>
         <GlobalStyle />
         <HeaderComponent siteTitle={data.site.siteMetadata.title} />
-          <div className="waveDivider">
+          {/* <div className="waveDivider"> */}
             <SocialIcons />
             <main>{children}</main>
-          </div>
+          {/* </div> */}
        </>
         }
         <Footer />
