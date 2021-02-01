@@ -4,6 +4,8 @@ import 'pattern.css/dist/pattern.css';
 
 import { Layout, TechStack, SEO, FrontPage } from '../components'
 import Projects from './projects'
+//just to see what's going on
+import ProjectSection from '../components/ProjectSection'
 
 
 const IndexPage = () => (
@@ -12,7 +14,7 @@ const IndexPage = () => (
     <FrontPage />
     <TechStack />
     <Projects />
-
+    {/* <ProjectSection /> */}
   </Layout>
 )
 

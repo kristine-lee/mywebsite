@@ -1,5 +1,5 @@
 import React from 'react';
-import {graphql} from 'gatsby';
+import { graphql } from 'gatsby';
 import { Layout, SEO } from '../components'
 
 interface Props {

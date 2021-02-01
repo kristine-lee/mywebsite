@@ -1,4 +1,4 @@
-export const projectdata = {
+export const frontmatter = {
   projects: [
     {
       title: "DJ Party",

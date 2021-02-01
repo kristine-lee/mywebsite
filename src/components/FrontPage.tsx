@@ -15,7 +15,7 @@ const FrontPage: React.FC<{}> = () => {
       </div>
       <div className={styles.break} />
       <div className={styles.row}>
-        <p><span>A former nonprofit fundraiser, I decided to take the plunge into software engineering after realizing that I wanted to do something with more problem solving. </span></p>
+        <p><span>I taught myself HTML and CSS for custom MySpace layouts (anyone remember those?) and realized that I really liked coding. </span></p>
         <p><span>Originally from the South, I now live in NYC. I don't have a regional accent (I think!), but I can make preeeetty good collard greens. </span></p>
         <p><span>In my free time, I enjoy hiking, volunteering, going to used bookstores, and hanging out with my foster cat.</span></p>
       </div>

@@ -24,11 +24,30 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1000,
+              quality: 80,
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+      // options: {
+      //   name: `content`,
+      //   path: `${__dirname}/src/content`,
+      // },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -41,6 +60,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
+    "gatsby-transformer-javascript-frontmatter",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
